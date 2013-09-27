@@ -1,0 +1,23 @@
+[CLOTH]
+Robe
+Shirt
+Tabard
+T-shirt
+Light Jacket
+Hoodie
+Sweater
+--
+[LEATHER]
+Jerkin
+Leather Shirt
+Padded Armor
+--
+[CHAIN]
+Chain Shirt
+Hauberk
+--
+[PLATE]
+Plate Mail
+Plate Armor
+Plate Suit
+--

@@ -1,0 +1,11 @@
+[CLOTH]
+Torn
+Silken
+Wimpy
+Moth-eaten
+Holy
+Unholy
+Uncanny
+Weird
+Tiny
+--

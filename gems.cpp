@@ -1,7 +1,10 @@
 #include <iostream>
 #include <string>
+#include <fstream>
+#include <vector>
 
 enum gearTypes { HEAD_ARMOR, CHEST_ARMOR, ACCESSORY, MAIN_HAND, OFF_HAND};
+enum armorTypes { CLOTH, LEATHER, CHAIN, PLATE};
 
 struct gem {
 
@@ -9,7 +12,7 @@ struct gem {
 
 struct slot {
 	int numSides;
-	gem inhabitantGem;
+	gem residentGem;
 };
 
 struct gear {
@@ -27,8 +30,7 @@ gear generateItem() {
 
 
 int main () {
-	gear item;
-	item = generateItem();
+
 
 
 	return 0;
