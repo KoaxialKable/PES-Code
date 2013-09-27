@@ -32,7 +32,7 @@ string getName(armorTypes type){
 
 	// core
 	ifstream openfile;
-	openfile.open("names.txt");
+	openfile.open("Text Files/names.txt");
 	if(openfile) {
 		while (openfile.good()) {
 			string line;
@@ -50,7 +50,7 @@ string getName(armorTypes type){
 	openfile.close();
 
 	// prefix
-	openfile.open("prefixes.txt");
+	openfile.open("Text Files/prefixes.txt");
 	if(openfile) {
 		while (openfile.good()) {
 			string line;
@@ -68,7 +68,7 @@ string getName(armorTypes type){
 	openfile.close();
 
 	// suffix
-	openfile.open("suffixes.txt");
+	openfile.open("Text Files/suffixes.txt");
 	if(openfile) {
 		while (openfile.good()) {
 			string line;
@@ -106,7 +106,7 @@ int main () {
 	type = CLOTH;
 	
 	// just for fun, let's make a bunch!
-	for (int i = 0; i < 30; i++) {
+	for (int i = 0; i < 20; i++) {
 		item.name = getName(type);
 		cout << item.name << endl;
 	}
