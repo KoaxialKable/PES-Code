@@ -91,9 +91,14 @@ string getName(armorTypes type){
 	p = rand()%100;
 	s = rand()%100;
 	// what a mess...
-	if (p >= 33) { result.append(pre[rand()%(int)pre.size()]); result.append(" ");}
+	int pr = rand()%pre.size();
+	int sr = rand()%suf.size();
+
+	if (pre.size() > 0)
+		if (p >= 33) { result.append(pre[pr]); result.append(" ");}
 	result.append(core[rand()%(int)core.size()]);
-	if (s >= 50) {result.append(" "); result.append(suf[rand()%(int)suf.size()]);}
+	if (suf.size() > 0)
+		if (s >= 50) {result.append(" "); result.append(suf[sr]);}
 
 	return result;
 }
@@ -103,7 +108,7 @@ int main () {
 	gear item;
 	armorTypes type;
 
-	type = CLOTH;
+	type = CHAIN;
 	
 	// just for fun, let's make a bunch!
 	for (int i = 0; i < 20; i++) {
